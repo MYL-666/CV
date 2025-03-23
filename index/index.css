@@ -341,7 +341,11 @@ img[src="../img/airliquid.png"]{
 .progress-bar.language{
     margin: 1rem 0;
 }
-
+.languages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 @media print {
     body {
