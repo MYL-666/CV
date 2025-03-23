@@ -323,3 +323,44 @@ img[src="../img/airliquid.png"]{
     width: 200px;
     margin: 10px 0;
 }
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.speak{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+.speak>span{
+    width: 130px;
+}
+.progress-bar.language{
+    margin: 1rem 0;
+}
+
+
+@media print {
+    body {
+      background-color: #FFFFFF; 
+      color: #000;
+    }
+  
+    .left {
+      background-color: #CFC1B3;/
+    }
+  
+    .right {
+      background-color: #FFFFF0; 
+    }
+  
+    .section {
+      page-break-inside: avoid;
+    }
+  }
+  
+  
