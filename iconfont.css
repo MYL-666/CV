@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4835641 */
+  src: url('iconfont.woff2?t=1742753701001') format('woff2'),
+       url('iconfont.woff?t=1742753701001') format('woff'),
+       url('iconfont.ttf?t=1742753701001') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pro-photograph:before {
+  content: "\e602";
+}
+
+.icon-person-walking-luggage:before {
+  content: "\ec23";
+}
+
+.icon-a-NoGym:before {
+  content: "\e6e6";
+}
+
+.icon-html5:before {
+  content: "\e7cb";
+}
+
+.icon-github:before {
+  content: "\e691";
+}
+
+.icon-php:before {
+  content: "\e66c";
+}
+
+.icon-email1:before {
+  content: "\e601";
+}
+
+.icon-css:before {
+  content: "\e620";
+}
+
+.icon-js:before {
+  content: "\ec0c";
+}
+
+.icon-python:before {
+  content: "\ec18";
+}
+
+.icon-adobe-lightroom:before {
+  content: "\e69d";
+}
+
+.icon-phone-fill:before {
+  content: "\e85f";
+}
+
+.icon-adobe_photoshop:before {
+  content: "\e606";
+}
+
+.icon-linkedin:before {
+  content: "\e64c";
+}
+
+.icon-icon-:before {
+  content: "\e744";
+}
+
+.icon-profile:before {
+  content: "\e6bd";
+}
+
+.icon-skill:before {
+  content: "\e630";
+}
+
+.icon-project:before {
+  content: "\e634";
+}
+
+.icon-chat1:before {
+  content: "\e75e";
+}
+
+.icon-zonggongsi:before {
+  content: "\e625";
+}
+
+.icon-home1:before {
+  content: "\e600";
+}
+
+.icon-Achievements:before {
+  content: "\e690";
+}
+
+.icon-zhengshu1:before {
+  content: "\ee19";
+}
+

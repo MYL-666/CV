@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto Flex;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ebebebf5;
+    color: #333;
+}
+main{
+    max-width: 794px;
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+.name{
+    font-family: Mrs Saint Delafield;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+.major{
+    padding: 8px;
+    border: 2px solid #333;
+    width: 180px;
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 600;
+}
+.left {
+    background-image: url(/img/handmade-paper.png);
+    background-blend-mode: multiply;
+    background-size: 70%;
+    background-color: #ebd6ca;
+    position: relative;
+    width: 40%;
+    background-repeat: repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+  
+.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: rgb(253, 252, 249);
+    position: relative;
+}
+.right::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;   
+    background-image: url(/img/handmade-paper.png);
+    background-repeat: repeat;
+    background-size: 50%;   
+    mix-blend-mode: multiply;
+    opacity: 0.8; /* 调整这个值 0.15 - 0.3 之间试试看 */
+    pointer-events: none;
+    z-index: 0;
+}
+  
+.section{
+    padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+}
+.title-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ccdcb2;
+    border-top-right-radius: 50px;
+    width: 50%;
+    height: 30px;
+    border-bottom-right-radius: 50px;
+    padding: 3px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.icons{
+    background-color: rgb(253, 252, 249);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: -9px;
+    border: 3px solid #bdce9f;
+}
+.iconfont{
+    font-size: 20px;
+}
+.icons::after{
+    content: '';
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: -5.5px;
+    border-radius: 50%;
+    z-index: 2;
+    border: 3px solid rgb(253, 252, 249);
+}
+.title,.iconfont{
+    color: #2C3E36;
+}
+.title{
+    margin-left: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.icon-zonggongsi,.icon-project{
+    font-size: 16px !important;
+}
+.section>span{
+    letter-spacing: 1px;
+}
+.timeline{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.time{
+    width: 80px;
+    height: auto;
+    position: relative;
+    display: flex;
+    font-size: 12px;
+    box-sizing:content-box ;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+.time>span{
+    font-style: italic;
+    text-align: center;
+}
+
+.position{
+    font-weight: bold;
+}
+.job-title{
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+.jobs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 12px;
+    width: 60%;
+    justify-content: start;
+    position: relative;
+}
+.border{
+    width: 3px;
+    height: 100%;
+    margin: 0 20px;
+    background-color: #2C3E36;
+    position: relative;
+}
+.border::after{
+    content: '';
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    background-color: #2C3E36;
+    border-radius: 50%;
+    right: 50%;
+    transform: translateX(50%);
+}
+.position,.job-title,.description{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+.description{
+    margin-bottom: 30px;
+}
+ul{
+    list-style-position: inside;
+}
+li{
+    margin: 10px 0;
+    font-size: 12px;
+}
+.profile{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #EDEAE0;
+    background-image: url(/img/profile.png);
+    background-size: cover;
+    margin: 1rem auto;
+}
+.left .major{
+    margin: 2rem 0;
+}
+.contact-shell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.left .iconfont{
+    font-size: 2rem !important;
+    margin-bottom: 10px;
+    color: #333;
+}
+.contact-box{
+    margin-bottom: 2rem;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: underline;
+}
+.skill-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-shell{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.icon-box{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem ;
+}
+.icon-box>span{
+    margin-left: 10px;
+}
+.progress-bar {
+    width: 100px;
+    background-color: #EDEAE0; 
+    border-radius: 8px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #A3B18A; 
+  border-radius: 8px 0 0 8px;
+  transition: width 0.5s ease;
+}
+.uni{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.uni>p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.uni>span{
+    font-style: italic;
+}
+.interest{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.interest-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.interest-item:nth-child(2){
+    margin: 0 10px;
+}
+.interest-item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li>span{
+    font-weight: bold;
+}
+.jobs>img[src="./img/foodcycle.png"]{
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    height: 50px;
+
+}
+img[src="/img/airliquid.png"]{
+    width: 200px;
+    margin: 10px 0;
+}
