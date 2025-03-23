@@ -204,7 +204,7 @@ li{
     height: 250px;
     border-radius: 50%;
     background-color: #EDEAE0;
-    background-image: url(/img/profile.png);
+    background-image: url(../img/profile.png);
     background-size: cover;
     margin: 1rem auto;
 }
@@ -319,7 +319,7 @@ li>span{
     height: 50px;
 
 }
-img[src="/img/airliquid.png"]{
+img[src="../img/airliquid.png"]{
     width: 200px;
     margin: 10px 0;
 }
