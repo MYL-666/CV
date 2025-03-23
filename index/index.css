@@ -312,10 +312,10 @@ a:hover{
 li>span{
     font-weight: bold;
 }
-.jobs>img[src="./img/foodcycle.png"]{
+.jobs>img[src="../img/foodcycle.png"]{
     position: absolute;
-    right: -7px;
-    top: -7px;
+    right: -15px;
+    top: -19px;
     height: 50px;
 
 }
