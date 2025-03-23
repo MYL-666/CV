@@ -348,19 +348,9 @@ img[src="../img/airliquid.png"]{
 }
 
 @media print {
-    body {
-      background-color: #FFFFFF; 
-      color: #000;
+    body{
+        background-color: #fff;
     }
-  
-    .left {
-      background-color: #CFC1B3;/
-    }
-  
-    .right {
-      background-color: #FFFFF0; 
-    }
-  
     .section {
       page-break-inside: avoid;
     }
