@@ -38,17 +38,17 @@ main{
     background-size: 70%;
     background-color: #ebd6ca;
     position: relative;
-    width: 40%;
+    width: 30%;
     background-repeat: repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
 }
   
 .right {
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,11 +70,9 @@ main{
 }
   
 .section{
-    padding: 1rem ;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
-
+    margin-bottom: 20px;
 }
 .title-box{
     display: flex;
@@ -162,7 +160,7 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 16px;
     width: 60%;
     justify-content: start;
     position: relative;
@@ -197,11 +195,11 @@ ul{
 }
 li{
     margin: 10px 0;
-    font-size: 12px;
+    font-size: 16px;
 }
 .profile{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color: #EDEAE0;
     background-image: url(../img/profile.png);
@@ -219,12 +217,12 @@ li{
     margin-top: 1.5rem;
 }
 .left .iconfont{
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     margin-bottom: 10px;
     color: #333;
 }
 .contact-box{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 a{
     text-decoration: none;
@@ -282,11 +280,13 @@ a:hover{
     align-items: center;
 }
 .uni>p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .uni>span{
     font-style: italic;
+    font-size: 14px;
 }
 .interest{
     width: 100%;
@@ -297,17 +297,19 @@ a:hover{
 }
 .interest-box{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    justify-content: space-evenly;
-}
-.interest-item:nth-child(2){
-    margin: 0 10px;
+    justify-content: center;
 }
 .interest-item{
-    width: 25%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.interest-item:not(:last-child){
+    margin-bottom: 1rem;
 }
 li>span{
     font-weight: bold;
@@ -315,7 +317,7 @@ li>span{
 .jobs>img[src="../img/foodcycle.png"]{
     position: absolute;
     right: -15px;
-    top: -19px;
+    top: -30px;
     height: 50px;
 
 }
@@ -333,10 +335,10 @@ img[src="../img/airliquid.png"]{
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 1rem;
+    gap: 10px;
 }
 .speak>span{
-    width: 130px;
+    width: 80px;
 }
 .progress-bar.language{
     margin: 1rem 0;
@@ -346,13 +348,99 @@ img[src="../img/airliquid.png"]{
     flex-direction: column;
     align-items: center;
 }
-
+.traits {
+    list-style-position: inside;
+  }
+.percentage{
+    display: none;
+  }
 @media print {
     body{
         background-color: #fff;
     }
-    .section {
-      page-break-inside: avoid;
+    * ,.name{
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+    .left{
+        background-color: #fff;
+        margin-right: 1rem;
+    }
+    .left,.right::before{
+        background-image: none;
+    }
+    .iconfont{
+        font-size: 12px !important;
+    }
+    .right{
+        background-color: #e1e1e15d !important;
+        color: #333;
+    }
+    .icons{
+        background-color: #fff;
+        border: 3px solid #333;
+    }
+    .contact-shell>a{
+        font-size: 18px !important;
+    }
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon-box>span{
+        font-size: 18px !important;
+    }
+    .title-box{
+        background-color: #333;
+        width: 55%;
+    }
+    .icon::after{
+        border: 3px solid #fff;
+    }
+    .right .iconfont{
+        color: #333;
+    }
+    .title,.iconfont{
+        color:#fff ;
+    }
+    /* .certifications {
+      page-break-inside: avoid !important;
+      break-inside: avoid;
+    } */
+    .progress-bar{
+        background-color: #fff;
+        overflow: visible;
+    }
+    .progress{
+        display: none;
+    }
+    .percentage{
+        display: inline-block;
+        font-weight: bold;
+    }
+    .timeline{
+        flex-direction: column;
+        align-items: center;
+    }
+    .border{
+        display: none;
+    }
+    .border::after{
+        display: none;
+    }
+    .time{
+        width: 100%;
+        text-align: right;
+    }
+    .jobs>img[src="../img/foodcycle.png"]{
+        right: 50px;
+    }
+    .position,.description,.jobs{
+        width: 100%;
+    }
+    .right a{
+        color: #333;
     }
   }
   
